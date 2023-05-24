@@ -22,12 +22,6 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white">
         {/* Navbar */}
 
@@ -62,14 +56,14 @@ export default function Home() {
             <div className="col-span-2 lg:mt-20">
               <h1 className="tracking-wider">Hello!</h1>
               <h2 className="text-3xl lg:text-6xl py-5 text-teal-600 font-bold">
-                I'm Feyz Ibrahim
+                I&apos;m Feyz Ibrahim
               </h2>
               <h3 className="text-lg lg:text-2xl py-2">
                 Full Stack Dev / Unity Game Dev
               </h3>
               <p className="py-2 leading-6 text-gray-600 max-w-lg ">
                 Freelancer providing services for programming and design content
-                needs. Join me down and let's get cracking!
+                needs. Join me down and let&apos;s get cracking!
               </p>
               <p className="text-xs lg:text-sm inline-flex my-6 tracking-wide">
                 Get in touch 👉
@@ -133,13 +127,13 @@ export default function Home() {
               SERVICES I OFFER
             </h3>
             <p className="text-md leading-8 text-gray-600 max-w-5xl mx-auto lg:text-center">
-              Since the beginning of ny journey as a freelance developer, I've
-              done several remote works and one great college project. Lorem
-              Ipsum is simply <span className="text-teal-600">dummy</span> text
-              of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a
-              type specimen book.
+              Since the beginning of ny journey as a freelance developer,
+              I&apos;ve done several remote works and one great college project.
+              Lorem Ipsum is simply <span className="text-teal-600">dummy</span>{" "}
+              text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry&apos;s standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book.
             </p>
           </div>
           <div className="lg:flex lg:gap-20">
@@ -198,7 +192,7 @@ export default function Home() {
                   Get to know me!
                 </h3>
                 <p className="text-gray-600 mt-5 lg:text-lg">
-                  I'm a self thought{" "}
+                  I&apos;m a self thought{" "}
                   <span className="text-teal-600">Full Stack Developer</span>{" "}
                   building web apps as freelancer... Check out some of my work
                   in the <span className="font-bold">Projects</span> section.
@@ -219,10 +213,10 @@ export default function Home() {
                   . If you got time feel free to checkout that too.
                 </p>
                 <p className="text-gray-600 mt-5 lg:text-lg">
-                  I'm open to <span className="font-bold">Job</span>{" "}
+                  I&apos;m open to <span className="font-bold">Job</span>{" "}
                   opportunities where I can contribute, learn and grow. If you
                   have a good opportunity that matches my skills and experience
-                  then don't hesitate to{" "}
+                  then don&apos;t hesitate to{" "}
                   <span className="font-bold">contact</span> me.
                 </p>
                 <button className="button-style my-6">
