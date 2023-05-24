@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
@@ -129,11 +128,6 @@ export default function Home() {
             <p className="text-md leading-8 text-gray-600 max-w-5xl mx-auto lg:text-center">
               Since the beginning of ny journey as a freelance developer,
               I&apos;ve done several remote works and one great college project.
-              Lorem Ipsum is simply <span className="text-teal-600">dummy</span>{" "}
-              text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry&apos;s standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book.
             </p>
           </div>
           <div className="lg:flex lg:gap-20">
@@ -253,7 +247,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="bg-slate-800 px-10 mt-10 min-h-screen">
+          <div className="bg-slate-800 px-10 mt-10 min-h-screen pb-10">
             <h3 className="text-center text-2xl pb-2 pt-5 font-semibold">
               CONTACT
             </h3>
@@ -289,8 +283,8 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="px-40 py-16">
-          <div className="flex justify-between">
+        <footer className="px-10 lg:px-40 pt-20 lg:py-16">
+          <div className="lg:flex lg:justify-between">
             <div>
               <h3 className="text-2xl font-bold tracking-wide">FEYZ IBRAHIM</h3>
               <p className="py-6 leading-6 text-gray-600 max-w-lg">
@@ -326,8 +320,8 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full border-b border-cyan-400 my-10"></div>
-          <div className="text-center">
-            <p>© Copyright 2023</p>
+          <div className="text-center pb-10">
+            <p>Copyright 2023</p>
             <p className="my-2">...</p>
             <p>Made with ❤️ by Feyz Ibrahim</p>
           </div>
