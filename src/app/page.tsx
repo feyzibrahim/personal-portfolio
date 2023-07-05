@@ -23,8 +23,7 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white">
         {/* Navbar */}
-
-        <nav className="py-5 mb-5 flex justify-between px-10 lg:px-32">
+        <nav className="px-10 lg:px-32 py-5 mb-5 flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30">
           <h1 className="">Feyz Ibrahim</h1>
           <ul className="flex items-center">
             <li className="cursor-pointer">
@@ -50,9 +49,9 @@ export default function Home() {
 
         {/* Main Body */}
 
-        <section className="min-h-screen px-10 lg:px-32">
+        <section className="min-h-screen px-10 lg:px-32 pt-20 lg:pt-6">
           <div className="lg:grid lg:grid-cols-3">
-            <div className="col-span-2 lg:mt-20">
+            <div className="lg:col-span-2 lg:mt-20">
               <h1 className="tracking-wider">Hello!</h1>
               <h2 className="text-3xl lg:text-6xl py-5 text-teal-600 font-bold">
                 I&apos;m Feyz Ibrahim
@@ -102,7 +101,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="my-10 text-center">
+          <div className="my-5 text-center hidden lg:block">
             {darkMode ? (
               <div className="scroll-downs">
                 <div className="mousey">
@@ -241,6 +240,7 @@ export default function Home() {
                   <span className="skill-badge">Unity</span>
                   <span className="skill-badge">Blender</span>
                   <span className="skill-badge">C#</span>
+                  <span className="skill-badge">HTML</span>
                 </div>
               </div>
             </div>
