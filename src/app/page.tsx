@@ -17,7 +17,7 @@ import GameDev from "./img/games.png";
 import { useState } from "react";
 import "./styles.css";
 
-import MyForm from "./api/myform";
+import MyForm from "./myform";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
