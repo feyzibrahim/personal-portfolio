@@ -17,6 +17,8 @@ import GameDev from "./img/games.png";
 import { useState } from "react";
 import "./styles.css";
 
+import MyForm from "./api/myform";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
@@ -255,31 +257,7 @@ export default function Home() {
               Feel free to Contact me by submitting the form below and I will
               get back to you as soon as possible
             </p>
-            <form className="lg:w-2/4 bg-slate-700 mx-auto mt-5 px-5 lg:px-16 rounded">
-              <p className="pt-10 pb-2">Name</p>
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your Name"
-                className="input-text"
-              />
-              <p className="pt-10 pb-2">Email</p>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your Email"
-                className="input-text"
-              />
-              <p className="pt-10 pb-2">Message</p>
-              <textarea
-                name="message"
-                placeholder="Enter your Message"
-                className="input-text h-56"
-              />
-              <div className="text-right">
-                <button className="button-style my-5">Submit</button>
-              </div>
-            </form>
+            <MyForm />
           </div>
         </section>
 
