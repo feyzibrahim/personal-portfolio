@@ -25,7 +25,7 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white">
         {/* Navbar */}
-        <nav className="px-10 lg:px-32 py-5 mb-5 flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <nav className="px-10 lg:px-32 py-5 mb-5 flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30 z-10">
           <h1 className="">Feyz Ibrahim</h1>
           <ul className="flex items-center">
             <li className="cursor-pointer">

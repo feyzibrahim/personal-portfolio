@@ -61,7 +61,7 @@ const MyForm: React.FC = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-0">
       {showAlert && (
         <div className="alert-box absolute inset-0 flex items-center justify-center">
           <div className="bg-white border border-gray-300 rounded-md p-4 text-black ">
