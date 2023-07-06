@@ -16,8 +16,10 @@ import Design from "./img/design.png";
 import GameDev from "./img/games.png";
 import { useState } from "react";
 import "./styles.css";
+import MyForm from "./components/myForm";
 
-import MyForm from "./myform";
+import Link from "next/link";
+import ProjectSession from "./components/projectSession";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -25,10 +27,13 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white">
         {/* Navbar */}
-        <nav className="px-10 lg:px-32 py-5 mb-5 flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30 z-10">
+
+        <nav className="px-10 lg:px-32 py-5 mb-5  flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30 z-10">
           <h1 className="">Feyz Ibrahim</h1>
           <ul className="flex items-center">
             <li className="cursor-pointer">
+              {/* Dark Mode Toggle  */}
+
               {!darkMode ? (
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -42,17 +47,19 @@ export default function Home() {
               )}
             </li>
             <li>
-              <a href="" className="button-style ml-4">
+              {/* Resume Button */}
+              <Link href="/new" className="button-style ml-4">
                 Resume
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         {/* Main Body */}
 
-        <section className="min-h-screen px-10 lg:px-32 pt-20 lg:pt-6">
+        <section className="px-10 pb-10 lg:pb-20 lg:px-32 pt-20">
           <div className="lg:grid lg:grid-cols-3">
+            {/* Basic  Information about me*/}
             <div className="lg:col-span-2 lg:mt-20">
               <h1 className="tracking-wider">Hello!</h1>
               <h2 className="text-3xl lg:text-6xl py-5 text-teal-600 font-bold">
@@ -71,30 +78,45 @@ export default function Home() {
                   feyzibrahimx@gmail.com
                 </span>
               </p>
+
+              {/* Social Media Links */}
+
               <div className="flex text-2xl justify-between lg:justify-normal lg:gap-16 text-gray-600 lg:mb-10">
+                {/* Linked In */}
                 <a
                   href="https://www.linkedin.com/in/feyz-ibrahim-861883194/"
                   target="_blank"
                 >
                   <AiFillLinkedin className="icon-style" />
                 </a>
+
+                {/* Twitter */}
                 <a href="https://twitter.com/fe_y_z_" target="_blank">
                   <AiFillTwitterCircle className="icon-style" />
                 </a>
+
+                {/* Youtube Channel */}
                 <a
                   href="https://www.youtube.com/channel/UChlOfBkweCYg5QIAY9YprTw"
                   target="_blank"
                 >
                   <AiFillYoutube className="icon-style" />
                 </a>
+
+                {/* Github Repo */}
                 <a href="https://github.com/feyzibrahim" target="_blank">
                   <AiFillGithub className="icon-style" />
                 </a>
+
+                {/* Instagram */}
                 <a href="https://www.instagram.com/fe_y_z_" target="_blank">
                   <AiFillInstagram className="icon-style" />
                 </a>
               </div>
             </div>
+
+            {/* Profile Photo */}
+
             <div className="flex justify-center mt-5 lg:mt-20">
               <Image
                 src={animePhoto}
@@ -104,6 +126,7 @@ export default function Home() {
             </div>
           </div>
           <div className="my-5 text-center hidden lg:block">
+            {/* Dark mode Toggle button*/}
             {darkMode ? (
               <div className="scroll-downs">
                 <div className="mousey">
@@ -121,20 +144,23 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Service session */}
+
         <section className="px-10 lg:px-32">
           <div>
             <h3 className="text-2xl py-1 text-center font-semibold">
               SERVICES I OFFER
             </h3>
-            <p className="text-md leading-8 text-gray-600 max-w-5xl mx-auto lg:text-center">
+            <p className="text-md leading-8 text-gray-600 max-w-5xl mx-auto text-center">
               Since the beginning of ny journey as a freelance developer,
               I&apos;ve done several remote works and one great college project.
             </p>
           </div>
           <div className="lg:flex lg:gap-20">
+            {/* UI/UX Design */}
             <div className="flex flex-col items-center text-center p-10 my-10 shadow-xl rounded-xl dark:bg-gray-800">
               <Image src={Design} alt="Code" width={100} height={100} />
-              <h3 className="text-lg font-bold pt-8 pb-2">Beautiful Designs</h3>
+              <h3 className="text-lg font-bold pt-8 pb-2">UI / UX Design</h3>
               <p className="py-2">
                 Creating elegant designs for your needs following core design
                 theory
@@ -144,6 +170,8 @@ export default function Home() {
               <p className="text-gray-800 dark:text-gray-500">Figma</p>
               <p className="text-gray-800 dark:text-gray-500">Illustrator</p>
             </div>
+
+            {/* Website and mobile development */}
             <div className="flex flex-col items-center text-center p-10 my-10 shadow-xl rounded-xl dark:bg-gray-800">
               <Image src={Code} alt="Code" width={100} height={100} />
               <h3 className="text-lg font-bold pt-8 pb-2">Web & Mobile App</h3>
@@ -156,6 +184,8 @@ export default function Home() {
               <p className="text-gray-800 dark:text-gray-500">Flutter</p>
               <p className="text-gray-800 dark:text-gray-500">Java/Kotlin</p>
             </div>
+
+            {/* Game Development */}
             <div className="flex flex-col items-center text-center p-10 my-10 shadow-xl rounded-xl dark:bg-gray-800 ">
               <Image src={GameDev} alt="Code" width={100} height={100} />
               <h3 className="text-lg font-bold pt-8 pb-2">Game Development</h3>
@@ -172,16 +202,18 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* About me section */}
+
         <section className="px-10 lg:px-32">
           <div>
-            <h3 className="text-center text-2xl pb-2 pt-5 font-semibold">
-              ABOUT ME
-            </h3>
+            <h3 className="div-h1">ABOUT ME</h3>
             <p className="text-center text-md text-gray-500 max-w-5xl lg:max-w-2xl mx-auto lg:text-center">
               Here you will find more information about me, what I do, and my
               current skills mostly in terms of programming and technology
             </p>
             <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-16">
+              {/* Description about me */}
               <div>
                 <h3 className="text-xl text-gray-500 font-bold">
                   Get to know me!
@@ -220,6 +252,9 @@ export default function Home() {
                   </div>
                 </button>
               </div>
+
+              {/* Skills session */}
+
               <div>
                 <h3 className="text-xl text-gray-500 font-bold pb-2">
                   My Skills
@@ -248,11 +283,18 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Projects */}
+
+        <section className="px-10 lg:px-32">
+          <ProjectSession />
+        </section>
+
+        {/* Contact Me session */}
+
         <section>
           <div className="bg-slate-800 px-10 mt-10 min-h-screen pb-10">
-            <h3 className="text-center text-2xl pb-2 pt-5 font-semibold">
-              CONTACT
-            </h3>
+            <h3 className="div-h1">CONTACT</h3>
             <p className="text-center text-gray-500">
               Feel free to Contact me by submitting the form below and I will
               get back to you as soon as possible
@@ -260,6 +302,8 @@ export default function Home() {
             <MyForm />
           </div>
         </section>
+
+        {/* Footer */}
 
         <footer className="px-10 lg:px-40 pt-20 lg:py-16">
           <div className="lg:flex lg:justify-between">
@@ -270,6 +314,8 @@ export default function Home() {
                 needs. Web and Mobile App developer and Unity Game Developer...
               </p>
             </div>
+
+            {/* Social Media Links */}
             <div>
               <h3 className="text-2xl font-bold mb-5 tracking-wide">SOCIAL</h3>
               <div className="text-2xl flex gap-5">
@@ -297,7 +343,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Line between footer and copy rights */}
+
           <div className="w-full border-b border-cyan-400 my-10"></div>
+
+          {/* Copy rights and Creator details*/}
+
           <div className="text-center pb-10">
             <p>Copyright 2023</p>
             <p className="my-2">...</p>
