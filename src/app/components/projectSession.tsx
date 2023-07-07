@@ -51,8 +51,8 @@ const ProjectSession: React.FC = () => {
           <p className="project-p">
             Built using plane HTML, CSS for the first week task of brocamp. Just
             a clone of recurring. Which is initiative taken by SlideBean as part
-            of their company expansion. A website for tracking all the subscrgit
-            add .iptions of a company.
+            of their company expansion. A website for tracking all the
+            subscriptions of a company.
           </p>
           <button className="mb-5 button-style">show case study</button>
         </div>

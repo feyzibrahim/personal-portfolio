@@ -17,12 +17,22 @@ import GameDev from "./img/games.png";
 import { useState } from "react";
 import "./styles.css";
 import MyForm from "./components/myForm";
-
-import Link from "next/link";
 import ProjectSession from "./components/projectSession";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+
+  // Resume Download button
+  const handleDownload = () => {
+    const resumeUrl = "/Feyz-Resume.pdf"; //Location of pdf in the public folder
+
+    // Triggering download using anchor tag
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Feyz-Ibrahim-Resume.pdf";
+    link.click();
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white">
@@ -48,9 +58,12 @@ export default function Home() {
             </li>
             <li>
               {/* Resume Button */}
-              <Link href="/new" className="button-style ml-4">
+              <a
+                className="button-style ml-4 my-0 cursor-pointer"
+                onClick={handleDownload}
+              >
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
