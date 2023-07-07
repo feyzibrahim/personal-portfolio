@@ -1,14 +1,7 @@
 "use client";
 
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillPhone,
-} from "react-icons/ai";
+import { AiFillPhone } from "react-icons/ai";
 import Image from "next/image";
 import animePhoto from "./img/pic.jpg";
 import Code from "./img/code.png";
@@ -18,6 +11,7 @@ import { useState } from "react";
 import "./styles.css";
 import MyForm from "./components/myForm";
 import ProjectSession from "./components/projectSession";
+import SocialMediaIcons from "./components/socialMediaIcons";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -35,7 +29,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white">
+      <main className="bg-white text-sm font-quicksand dark:bg-gray-900 dark:text-white ">
         {/* Navbar */}
 
         <nav className="px-10 lg:px-32 py-5 mb-5  flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30 z-10">
@@ -95,36 +89,7 @@ export default function Home() {
               {/* Social Media Links */}
 
               <div className="flex text-2xl justify-between lg:justify-normal lg:gap-16 text-gray-600 lg:mb-10">
-                {/* Linked In */}
-                <a
-                  href="https://www.linkedin.com/in/feyz-ibrahim-861883194/"
-                  target="_blank"
-                >
-                  <AiFillLinkedin className="icon-style" />
-                </a>
-
-                {/* Twitter */}
-                <a href="https://twitter.com/fe_y_z_" target="_blank">
-                  <AiFillTwitterCircle className="icon-style" />
-                </a>
-
-                {/* Youtube Channel */}
-                <a
-                  href="https://www.youtube.com/channel/UChlOfBkweCYg5QIAY9YprTw"
-                  target="_blank"
-                >
-                  <AiFillYoutube className="icon-style" />
-                </a>
-
-                {/* Github Repo */}
-                <a href="https://github.com/feyzibrahim" target="_blank">
-                  <AiFillGithub className="icon-style" />
-                </a>
-
-                {/* Instagram */}
-                <a href="https://www.instagram.com/fe_y_z_" target="_blank">
-                  <AiFillInstagram className="icon-style" />
-                </a>
+                <SocialMediaIcons />
               </div>
             </div>
 
@@ -259,11 +224,14 @@ export default function Home() {
                   then don&apos;t hesitate to{" "}
                   <span className="font-bold">contact</span> me.
                 </p>
-                <button className="button-style my-6">
-                  <div className="flex items-center">
-                    Contact Me <AiFillPhone className="ml-2" />
+                {/* <button className=""> */}
+                <a href="#contact">
+                  <div className="flex items-center button-style my-6 w-fit">
+                    <p>Contact Me</p>
+                    <AiFillPhone className="ml-2" />
                   </div>
-                </button>
+                </a>
+                {/* </button> */}
               </div>
 
               {/* Skills session */}
@@ -305,8 +273,8 @@ export default function Home() {
 
         {/* Contact Me session */}
 
-        <section>
-          <div className="bg-slate-800 px-10 mt-10 min-h-screen pb-10">
+        <section id="contact">
+          <div className="bg-slate-800 px-10 mt-10 min-h-screen py-10">
             <h3 className="div-h1">CONTACT</h3>
             <p className="text-center text-gray-500">
               Feel free to Contact me by submitting the form below and I will
@@ -332,27 +300,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold mb-5 tracking-wide">SOCIAL</h3>
               <div className="text-2xl flex gap-5">
-                <a
-                  href="https://www.linkedin.com/in/feyz-ibrahim-861883194/"
-                  target="_blank"
-                >
-                  <AiFillLinkedin className="icon-style" />
-                </a>
-                <a href="https://twitter.com/fe_y_z_" target="_blank">
-                  <AiFillTwitterCircle className="icon-style" />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UChlOfBkweCYg5QIAY9YprTw"
-                  target="_blank"
-                >
-                  <AiFillYoutube className="icon-style" />
-                </a>
-                <a href="https://github.com/feyzibrahim" target="_blank">
-                  <AiFillGithub className="icon-style" />
-                </a>
-                <a href="https://www.instagram.com/fe_y_z_" target="_blank">
-                  <AiFillInstagram className="icon-style" />
-                </a>
+                <SocialMediaIcons />
               </div>
             </div>
           </div>

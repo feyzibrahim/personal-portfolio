@@ -3,7 +3,8 @@ import Image from "next/image";
 import ECampus from "../img/ecampus.png";
 import Recurring from "../img/recurring.png";
 import FundFolio from "../img/fundfolio.png";
-
+import { FiArrowUpRight } from "react-icons/fi";
+import { AiFillGithub } from "react-icons/ai";
 const ProjectSession: React.FC = () => {
   return (
     <>
@@ -21,7 +22,24 @@ const ProjectSession: React.FC = () => {
             digitally. Also built an android app for seamless working. App can
             be used by students for monitoring their progress
           </p>
-          <button className="mb-5 button-style">show case study</button>
+          <div className="flex">
+            <a
+              className="mb-5 flex w-fit button-style"
+              href="https://ecampus.onrender.com/"
+              target="_blank"
+            >
+              view live
+              <FiArrowUpRight className="ml-1" />
+            </a>
+            <a
+              href="https://github.com/feyzibrahim/cms-project"
+              target="_blank"
+              className="project-button-no-bg"
+            >
+              Github
+              <AiFillGithub className="text-lg ml-1" />
+            </a>
+          </div>
         </div>
         <div>
           <Image src={ECampus} alt="ecampus project" className="project-img" />
@@ -35,7 +53,24 @@ const ProjectSession: React.FC = () => {
             a clone of fundfolio. Which is the company of Sharique Shamsudheen.
             Option Trader based in Kerala.
           </p>
-          <button className="mb-5 button-style">show case study</button>
+          <div className="flex">
+            <a
+              className="mb-5 flex w-fit button-style"
+              href="https://feyzibrahim.github.io/brototype-week1-task2-fundfolio/"
+              target="_blank"
+            >
+              view live
+              <FiArrowUpRight className="ml-1" />
+            </a>
+            <a
+              href="https://github.com/feyzibrahim/brototype-week1-task2-fundfolio"
+              target="_blank"
+              className="project-button-no-bg"
+            >
+              Github
+              <AiFillGithub className="text-lg ml-1" />
+            </a>
+          </div>
         </div>
         <div>
           <Image
@@ -54,7 +89,24 @@ const ProjectSession: React.FC = () => {
             of their company expansion. A website for tracking all the
             subscriptions of a company.
           </p>
-          <button className="mb-5 button-style">show case study</button>
+          <div className="flex">
+            <a
+              className="mb-5 flex w-fit button-style"
+              href="https://feyzibrahim.github.io/brototype-week1-task1-recurring/"
+              target="_blank"
+            >
+              view live
+              <FiArrowUpRight className="ml-1" />
+            </a>
+            <a
+              href="https://github.com/feyzibrahim/brototype-week1-task1-recurring"
+              target="_blank"
+              className="project-button-no-bg"
+            >
+              Github
+              <AiFillGithub className="text-lg ml-1" />
+            </a>
+          </div>
         </div>
         <div>
           <Image
