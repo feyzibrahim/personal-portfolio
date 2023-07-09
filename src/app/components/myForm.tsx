@@ -10,11 +10,24 @@ const MyForm: React.FC = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const validateEmail = (email: string): boolean => {
+    return (
+      email.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      ) !== null
+    );
+  };
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent loading new page.
 
     if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
       showAlertBox("Missed one", "Please fill all the input boxes!!!");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      showAlertBox("Incorrect Format", "Please Check you email ID");
       return;
     }
 
