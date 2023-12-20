@@ -38,7 +38,6 @@ export default function Home() {
           <ul className="flex items-center">
             <li className="cursor-pointer">
               {/* Dark Mode Toggle  */}
-
               {!darkMode ? (
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
