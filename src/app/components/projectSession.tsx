@@ -115,12 +115,13 @@ const ProjectSession: React.FC = () => {
                   view live
                   <FiArrowUpRight className="ml-1" />
                 </a>
-                {item.gitLink.map((li) => {
+                {item.gitLink.map((li, index) => {
                   return (
                     <a
                       href={li}
                       target="_blank"
                       className="project-button-no-bg"
+                      key={index}
                     >
                       Github
                       <AiFillGithub className="text-lg ml-1" />
