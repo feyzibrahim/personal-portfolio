@@ -11,6 +11,7 @@ import Olx from "../img/olx.png";
 import Netflix from "../img/netflix.png";
 import Todo from "../img/todo.png";
 import ExIphone from "../img/exIphone.png";
+import RecurringMine from "@/app/img/RecurringMine.png";
 
 const ProjectSession: React.FC = () => {
   const list = [
@@ -89,11 +90,21 @@ const ProjectSession: React.FC = () => {
       design:
         "https://www.figma.com/community/file/1288476919033677670/ex-iphone-e-commerce-website-template",
     },
+    {
+      title: "Recurring",
+      description:
+        "A web application that allows companies to manage all the company-related works. The application will be built using Next.js for the front-end, a Microservices architecture for the backend, and adhere to Clean Architecture principles for maintainability and scalability.",
+      liveLink: "https://recurring.site/",
+      gitLink: ["https://github.com/feyzibrahim/recurring"],
+      img: RecurringMine,
+      design:
+        "https://www.figma.com/community/file/1327219082669006024/recurring-saas-company-management-system?fuid=1154789768829042785",
+    },
   ];
 
   return (
     <>
-      <h3 className="div-h1">Projects</h3>
+      <h3 className="div-h1 w-full h-full object-cover">Projects</h3>
       <p className="text-md leading-8 text-gray-600 max-w-5xl mx-auto text-center">
         Here you can find some of the projects that I created and look into the
         case study by clicking the show details button

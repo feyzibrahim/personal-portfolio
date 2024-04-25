@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const TravelWebsite: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const TravelWebsite: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-4 rounded shadow">
             <h2 className="text-xl font-semibold mb-4">Destination 1</h2>
-            <img
+            <Image
               src="https://placeimg.com/400/300/nature"
               alt="Destination 1"
               className="mb-4 rounded"
@@ -22,7 +23,7 @@ const TravelWebsite: React.FC = () => {
           </div>
           <div className="bg-white p-4 rounded shadow">
             <h2 className="text-xl font-semibold mb-4">Destination 2</h2>
-            <img
+            <Image
               src="https://placeimg.com/400/300/nature"
               alt="Destination 2"
               className="mb-4 rounded"
@@ -34,7 +35,7 @@ const TravelWebsite: React.FC = () => {
           </div>
           <div className="bg-white p-4 rounded shadow">
             <h2 className="text-xl font-semibold mb-4">Destination 3</h2>
-            <img
+            <Image
               src="https://placeimg.com/400/300/nature"
               alt="Destination 3"
               className="mb-4 rounded"

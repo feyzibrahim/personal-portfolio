@@ -241,24 +241,33 @@ export default function Home() {
                   My Skills
                 </h3>
                 <div className="flex flex-wrap">
-                  <span className="skill-badge">React JS</span>
-                  <span className="skill-badge">Next JS</span>
+                  <span className="skill-badge">React</span>
+                  <span className="skill-badge">Next</span>
+                  <span className="skill-badge">Node</span>
+                  <span className="skill-badge">Express</span>
+                  <span className="skill-badge">Microservice</span>
+                  <span className="skill-badge">Clean Architecture</span>
+                  <span className="skill-badge">MVC</span>
+                  <span className="skill-badge">Rest API</span>
+                  <span className="skill-badge">AWS</span>
+                  <span className="skill-badge">Azure</span>
+                  <span className="skill-badge">GCP</span>
+                  <span className="skill-badge">Nginx</span>
                   <span className="skill-badge">Tailwind</span>
-                  <span className="skill-badge">Express JS</span>
                   <span className="skill-badge">MongoDB</span>
-                  <span className="skill-badge">NoSQL</span>
                   <span className="skill-badge">Flutter</span>
+                  <span className="skill-badge">React Native</span>
+                  <span className="skill-badge">Vue</span>
                   <span className="skill-badge">Firebase</span>
-                  <span className="skill-badge">SQL</span>
+                  <span className="skill-badge">MySQL/PSQL</span>
                   <span className="skill-badge">GIT</span>
                   <span className="skill-badge">Github</span>
                   <span className="skill-badge">Responsive Design</span>
                   <span className="skill-badge">Figma</span>
-                  <span className="skill-badge">Photoshop</span>
-                  <span className="skill-badge">Unity</span>
-                  <span className="skill-badge">Blender</span>
-                  <span className="skill-badge">C#</span>
-                  <span className="skill-badge">HTML</span>
+                  <span className="skill-badge">Docker</span>
+                  <span className="skill-badge">Kubernetes</span>
+                  <span className="skill-badge">CI/CD</span>
+                  <span className="skill-badge">Data Structure</span>
                 </div>
               </div>
             </div>
